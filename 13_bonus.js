@@ -25,8 +25,9 @@ ex: la pomme est rouge et la banane est jaune
  */
 
 const countWords = (sentence) => {
-  return sentence.split(" ").reduce((acc, word) => {
-    acc[word] = acc[word] ? acc[word] + 1 : 1;
+  const words = sentence.split(" ");
+  return words.reduce((acc, word) => {
+    acc[word] = (acc[word] || 0) + 1;
     return acc;
   }, {});
 };
