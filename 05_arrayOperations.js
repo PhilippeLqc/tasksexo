@@ -33,7 +33,7 @@ const filterNameStartByA = (array) => array.filter((x) => x[0] === "A");
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
  */
 
-const sum = (array) => array.reduce((a, b) => a + b);
+const sum = (array) => array.reduce((acc, value) => acc + value, 0);
 /**
  * Utiliser la fonction .find sur le tableau passé en paramètre
  * retourne l'utilisateur qui a l'id passé en 2e paramètre
